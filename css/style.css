@@ -22,7 +22,10 @@ a {
     transition: 200ms;
 }
 .quick-link{
-    color: #4d0fd3;
+    color: #b55ac6;
+}
+.quick-link:hover{
+    color: #98b3e4 !important;
 }
 a:hover,
 a:active,
