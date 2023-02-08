@@ -5,6 +5,7 @@ body {
     color: #797979;
     background: #ffffff;
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 h1,
@@ -18,9 +19,11 @@ h6 {
 
 a {
     color: #313131;
-    transition: .3s;
+    transition: 200ms;
 }
-
+.quick-link{
+    color: #4d0fd3;
+}
 a:hover,
 a:active,
 a:focus {
