@@ -73,10 +73,10 @@
                     </div>
                     <div class="col-sm-12 col-md-6 d-none d-md-block hero-img-container">
                         <div class="social-media-icons">
-                           <a href="#"> <i class="fa-brands fa-github"></i> </a>
-                           <a href="#"> <i class="fab fa-twitter"></i></a>
-                           <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                          <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                           <a href="https://github.com/hermtechs" class="github"> <i class="fa-brands fa-github"></i> </a>
+                           <a href="https://twitter.com/muhiirwah" class="twitter"> <i class="fab fa-twitter"></i></a>
+                           <a href="https://linkedin.com/in/herbert-muhiirwa-4a8942193" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                          <a href="mailto:info@hermtecs.com" class="mail"><i class="fa-solid fa-envelope"></i></a>
                         </div>
                         <div class="hero-image">
                             <img src="img/hermtecs.png" alt="Herbert Muhiirwa Hermtecs">
@@ -201,7 +201,7 @@
                             <div class="service-text">
                                 <h3>SEO</h3>
                                 <p>
-                                   Is your app ranking poorly on Google search, or some pages not showing up, we can fix that for you ! 
+                                   Is your site ranking poorly on Google search, or some pages not showing up, we can fix that for you ! 
                                 </p>
                             </div>
                         </div>
@@ -256,27 +256,29 @@
                         <div class="col-md-4"></div>
                         <div class="col-md-8">
                             <div class="contact-form">
-                                <div id="success"></div>
-                                <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                                <form name="sentMessage" id="contactForm" novalidate="novalidate" action="https://formsubmit.co/hermtechs@gmail.com" method="POST">
                                     <div class="control-group">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                                        <input type="text" required class="form-control" name="name" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
                                         <p class="help-block"></p>
                                     </div>
                                     <div class="control-group">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                                        <input type="email" required  name="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
                                         <p class="help-block"></p>
                                     </div>
                                     <div class="control-group">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                                        <input type="text" required   name="subject" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
                                         <p class="help-block"></p>
                                     </div>
                                     <div class="control-group">
-                                        <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                                        <textarea class="form-control" type="text" required  name="message" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
                                         <p class="help-block"></p>
                                     </div>
                                     <div>
-                                        <button class="btn" type="submit" id="sendMessageButton">Send Message</button>
+                                        <button class="btn" type="submit" >Send Message</button>
                                     </div>
+                                   <input type="hidden" name="_next" 
+                                   value="https://hermtecs.com/submit.html" class="hide-input">
+
                                 </form>
                             </div>
                         </div>
@@ -353,10 +355,10 @@
                             <p>info@hermtecs.com</p>
                         </div>
                         <div class="footer-social">
-                            <a href="#"> <i class="fa-brands fa-github"></i> </a>
-                            <a href=""><i class="fab fa-twitter"></i></a>
-                            <a href=""> <i class="fa-solid fa-envelope"></i> </a>
-                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/hermtechs" class="github"> <i class="fa-brands fa-github"></i> </a>
+                            <a href="https://twitter.com/muhiirwah" class="twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="https://mailto:info@hermtecs.com" class="mail"> <i class="fa-solid fa-envelope"></i> </a>
+                            <a href="https://linkedin.com/in/herbert-muhiirwa-4a8942193" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
@@ -388,10 +390,6 @@
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
         <script src="lib/isotope/isotope.pkgd.min.js"></script>
         <script src="lib/lightbox/js/lightbox.min.js"></script>
-        
-        <!-- Contact Javascript File -->
-        <script src="mail/jqBootstrapValidation.min.js"></script>
-        <script src="mail/contact.js"></script>
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>

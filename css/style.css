@@ -7,7 +7,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
 }
-
+.hide-input{
+    display: none;
+}
 h1,
 h2, 
 h3, 
@@ -27,6 +29,7 @@ a {
 .quick-link:hover{
     color: #98b3e4 !important;
 }
+contact
 a:hover,
 a:active,
 a:focus {
@@ -132,7 +135,7 @@ a:focus {
 }
 
 .back-to-top:hover i {
-    color: #414141;
+    color: #b55ac6;
 }
 
 
@@ -430,9 +433,31 @@ a:focus {
     padding: 0.5rem;
 }
 .hero .social-media-icons a{
+    transform: unset !important;
     display: block;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    transition: 200ms;
+    position: relative;
+    z-index: 1000;
+    padding-left: 0.2rem 0.5rem;
+    /* transform-origin: unset !important; */
 
+}
+.hero .social-media-icons a:hover{
+    transform: scale(1.1);
+ 
+}
+.github{
+    color: #2d2b2b;
+}
+.twitter{
+    color: #1DA1F2;
+}
+.linkedin{
+    color: #0077b5;
+}
+.mail{
+    color: #2f0982;
 }
 /*******************************/
 /******* Section Header ********/
@@ -1333,7 +1358,7 @@ a:focus {
 }
 
 .contact .container-fluid {
-    background: url(../img/contact.jpg) left center no-repeat;
+    background: url(../img/contact.svg) left top no-repeat;
     background-size: contain;
 }
 
