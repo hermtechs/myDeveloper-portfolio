@@ -1,8 +1,14 @@
 const candlesContainer = document.querySelector(".candles");
 const mainContainer = document.querySelector(".main-container");
 // const candlesToBlow = document.querySelectorAll(".candle");
+const birthdayTextContainer = document.querySelector(".self-typing-text");
 
 // candleHTML.className = "candle";
+const birthdayMessage = `
+<div class="typewriter">
+<h1>Glory be to GOD ! Happy birthday to you Herbert</h1>
+</div>
+`;
 const age = 26;
 const candles = [];
 
@@ -62,9 +68,12 @@ function blowCandles() {
         // colorPids(average);
         if (Math.round(average) >= 100) {
           //   candlesToBlow[20].classList.add("candle-to-blow");
-          candlesToBlow.forEach((candle) =>
-            candle.classList.add("candle-to-blow")
-          );
+          candlesToBlow.forEach((candle) => {
+            candle.classList.add("candle-to-blow");
+            setTimeout(() => {
+              birthdayTextContainer.innerHTML = birthdayMessage;
+            }, 1500);
+          });
         }
       };
     })
